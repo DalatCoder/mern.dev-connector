@@ -229,7 +229,7 @@ router.delete('/comment/:post_id/:comment_id', auth, async (req, res) => {
   try {
     const post = await Post.findById(req.params.post_id);
     if (!post) {
-      return res.json(404).json({ msg: 'Post not found' });
+      return res.status(404).json({ msg: 'Post not found' });
     }
 
     // Pull out comment
