@@ -157,6 +157,13 @@ img {
   opacity: 0.9;
   background: var(--light-color);
   color: #333;
+  border-radius: 5px;
+  opacity: 0;
+
+  animation-name: appear;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
 }
 
 .btn-primary,
@@ -581,5 +588,14 @@ button {
   .post a,
   .post button {
     padding: 0.3rem 0.4rem;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
