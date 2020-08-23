@@ -4,6 +4,7 @@ import { setAlert } from './alert';
 import {
   GET_PROFILE,
   GET_PROFILES,
+  GET_REPOS,
   PROFILE_ERROR,
   UPDATE_PROFILE,
   CLEAR_PROFILE,
