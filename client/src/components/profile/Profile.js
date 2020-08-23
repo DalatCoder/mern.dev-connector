@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import { ProfileTop } from './ProfileTop.js';
+import { ProfileAbout } from './ProfileAbout';
 import { Spinner } from '../layout/Spinner';
 import { getProfileById } from '../../actions/profile';
 
@@ -35,6 +36,7 @@ const _Profile = ({
             )}
           <div className='profile-grid my-1'>
             <ProfileTop profile={profile} />
+            <ProfileAbout profile={profile} />
           </div>
         </Fragment>
       )}
