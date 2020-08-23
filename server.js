@@ -3,7 +3,9 @@ const express = require('express');
 const connectDB = require('./config/db');
 
 const app = express();
-
+process.on('uncaughtException', function (err) {
+  console.log(err);
+});
 // Connect Database
 connectDB();
 
