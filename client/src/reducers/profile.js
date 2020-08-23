@@ -46,7 +46,7 @@ export default function (state = initialState, action) {
         ...state,
         profile: null,
         repos: [],
-        loading: true,
+        loading: false,
       };
 
     case GET_REPOS:
