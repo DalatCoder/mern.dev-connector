@@ -6,7 +6,6 @@ import { connect } from 'react-redux';
 import { Spinner } from '../layout/Spinner';
 import { PostItem } from '../posts/PostItem';
 import { getPost } from '../../actions/post';
-import { connection } from 'mongoose';
 import { CommentForm } from './CommentForm';
 import { CommentItem } from './CommentItem';
 
