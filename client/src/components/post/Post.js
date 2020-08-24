@@ -7,6 +7,7 @@ import { Spinner } from '../layout/Spinner';
 import { PostItem } from '../posts/PostItem';
 import { getPost } from '../../actions/post';
 import { connection } from 'mongoose';
+import { CommentForm } from './CommentForm';
 
 const _Post = ({ getPost, post: { post, loading }, match }) => {
   useEffect(() => {
@@ -21,6 +22,7 @@ const _Post = ({ getPost, post: { post, loading }, match }) => {
         Back To Posts
       </Link>
       <PostItem post={post} showActions={false} />
+      <CommentForm postId={post._id} />
     </Fragment>
   );
 };
